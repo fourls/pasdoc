@@ -394,7 +394,7 @@ begin
     end;
   except
      on e: Exception do begin
-       DoMessage(2, pmtWarning,
+       DoMessage(1, pmtWarning,
          'Error %s: %s while parsing unit %s, continuing...',
          [e.ClassName, e.Message, ExtractFileName(SourceFileName)]);
      end;
